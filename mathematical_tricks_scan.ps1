@@ -160,7 +160,7 @@ foreach ($cssFile in $cssFiles) {
         # 5. Geometric sequences
         Write-Host "  Scanning for geometric sequences..." -ForegroundColor Gray
         $geometricSequences = @()
-        $numbers = [regex]::Matches($content, '\d+') | ForEach-Object { [int]$_.Value }
+        $numbers = [regex]::Matches($content, '\d+') | ForEach-Object { [long]$_.Value }
         
         for ($i = 0; $i -lt $numbers.Count - 2; $i++) {
             $a = $numbers[$i]
