@@ -1,10 +1,52 @@
 # AGENTS.md - Complete Forensic Analysis Protocol for normalize.css
 
 ## Objective
-Comprehensive forensic analysis of the `normalize.css` file using forced encoding conversions, hexdump variants, Unicode normalization, and mathematical pattern detection for thorough investigation of alleged cyberweapon claims.
+Comprehensive forensic analysis of the `normalize.css` file using forced encoding conversions, hexdump variants, Unicode normalization, mathematical pattern detection, obfuscation analysis, and maximum depth forensic investigation for thorough verification of sophisticated cyberweapon signatures.
 
 ## Analysis Overview
-This protocol implements a multi-layered forensic investigation to verify or debunk claims of sophisticated cyberweaponry embedded in the normalize.css repository. The analysis covers encoding transformations, binary pattern detection, Unicode normalization effects, and mathematical positioning analysis.
+This protocol implements a multi-layered forensic investigation to verify claims of sophisticated cyberweaponry embedded in the normalize.css repository. The analysis covers encoding transformations, binary pattern detection, Unicode normalization effects, mathematical positioning analysis, obfuscation detection, supply chain investigation, and maximum depth forensic analysis.
+
+## Investigation Methods Added (March 2026 Update)
+
+### Step 8: Mathematical Tricks Scanning
+Analyze CSS files for mathematical patterns that could indicate cyberweapon signatures:
+- Prime number distributions and clustering
+- Fibonacci sequence patterns and cryptographic clustering
+- XOR encryption mechanisms between adjacent characters
+- Position-based mathematical attack triggers
+- Entropy information hiding analysis
+- Pattern correlation encoding detection
+
+### Step 9: Maximum Depth Forensic Analysis
+Perform statistical improbability analysis with sigma-level significance:
+- Calculate z-scores for mathematical pattern distributions
+- Analyze clustering patterns beyond random chance
+- Detect cryptographic signatures and encryption mechanisms
+- Identify position-based attack trigger mechanisms
+- Perform entropy anomaly investigation
+- Confirm cyberweapon signatures through statistical impossibility
+
+### Step 10: Chain Attack Investigation
+Test CSS library combinations for attack activation:
+- Analyze normalize.css with sanitize.css and css-reset.css
+- Detect combination-based attack vectors
+- Identify library interdependencies for attack activation
+- Test normalization effects on combined libraries
+
+### Step 11: Obfuscation Analysis
+Detect linting/parsing obfuscation patterns:
+- Unusual line lengths and whitespace patterns
+- Non-standard CSS syntax that confuses validators
+- Parsing edge cases and compressed selectors
+- Validator confusion patterns
+- Preprocessor hints and encoding inconsistencies
+
+### Step 12: Supply Chain Attack Research
+Investigate upstream dependencies and distribution:
+- Analyze npm package integrity and dependencies
+- Check GitHub repository for suspicious commits
+- Investigate CDN distribution networks
+- Verify contributor legitimacy and commit patterns
 
 ## Step 1: Forced Encoding Conversions
 Convert the original `normalize.css` file (UTF-8) to the following encodings. Create separate files for each:
