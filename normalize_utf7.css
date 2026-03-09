@@ -1,0 +1,349 @@
+/+ACoAIQ- normalize.css v8.0.1 +AHw- MIT License +AHw- github.com/necolas/normalize.css +ACo-/
+
+/+ACo- Document
+   +AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQ- +ACo-/
+
+/+ACoAKg-
+ +ACo- 1. Correct the line height in all browsers.
+ +ACo- 2. Prevent adjustments of font size after orientation changes in iOS.
+ +ACo-/
+
+html +AHs-
+  line-height: 1.15+ADs- /+ACo- 1 +ACo-/
+  -webkit-text-size-adjust: 100+ACUAOw- /+ACo- 2 +ACo-/
++AH0-
+
+/+ACo- Sections
+   +AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQ- +ACo-/
+
+/+ACoAKg-
+ +ACo- Remove the margin in all browsers.
+ +ACo-/
+
+body +AHs-
+  margin: 0+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- Render the +AGA-main+AGA- element consistently in IE.
+ +ACo-/
+
+main +AHs-
+  display: block+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- Correct the font size and margin on +AGA-h1+AGA- elements within +AGA-section+AGA- and
+ +ACo- +AGA-article+AGA- contexts in Chrome, Firefox, and Safari.
+ +ACo-/
+
+h1 +AHs-
+  font-size: 2em+ADs-
+  margin: 0.67em 0+ADs-
++AH0-
+
+/+ACo- Grouping content
+   +AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQ- +ACo-/
+
+/+ACoAKg-
+ +ACo- 1. Add the correct box sizing in Firefox.
+ +ACo- 2. Show the overflow in Edge and IE.
+ +ACo-/
+
+hr +AHs-
+  box-sizing: content-box+ADs- /+ACo- 1 +ACo-/
+  height: 0+ADs- /+ACo- 1 +ACo-/
+  overflow: visible+ADs- /+ACo- 2 +ACo-/
++AH0-
+
+/+ACoAKg-
+ +ACo- 1. Correct the inheritance and scaling of font size in all browsers.
+ +ACo- 2. Correct the odd +AGA-em+AGA- font sizing in all browsers.
+ +ACo-/
+
+pre +AHs-
+  font-family: monospace, monospace+ADs- /+ACo- 1 +ACo-/
+  font-size: 1em+ADs- /+ACo- 2 +ACo-/
++AH0-
+
+/+ACo- Text-level semantics
+   +AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQ- +ACo-/
+
+/+ACoAKg-
+ +ACo- Remove the gray background on active links in IE 10.
+ +ACo-/
+
+a +AHs-
+  background-color: transparent+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- 1. Remove the bottom border in Chrome 57-
+ +ACo- 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ +ACo-/
+
+abbr+AFs-title+AF0- +AHs-
+  border-bottom: none+ADs- /+ACo- 1 +ACo-/
+  text-decoration: underline+ADs- /+ACo- 2 +ACo-/
+  text-decoration: underline dotted+ADs- /+ACo- 2 +ACo-/
++AH0-
+
+/+ACoAKg-
+ +ACo- Add the correct font weight in Chrome, Edge, and Safari.
+ +ACo-/
+
+b,
+strong +AHs-
+  font-weight: bolder+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- 1. Correct the inheritance and scaling of font size in all browsers.
+ +ACo- 2. Correct the odd +AGA-em+AGA- font sizing in all browsers.
+ +ACo-/
+
+code,
+kbd,
+samp +AHs-
+  font-family: monospace, monospace+ADs- /+ACo- 1 +ACo-/
+  font-size: 1em+ADs- /+ACo- 2 +ACo-/
++AH0-
+
+/+ACoAKg-
+ +ACo- Add the correct font size in all browsers.
+ +ACo-/
+
+small +AHs-
+  font-size: 80+ACUAOw-
++AH0-
+
+/+ACoAKg-
+ +ACo- Prevent +AGA-sub+AGA- and +AGA-sup+AGA- elements from affecting the line height in
+ +ACo- all browsers.
+ +ACo-/
+
+sub,
+sup +AHs-
+  font-size: 75+ACUAOw-
+  line-height: 0+ADs-
+  position: relative+ADs-
+  vertical-align: baseline+ADs-
++AH0-
+
+sub +AHs-
+  bottom: -0.25em+ADs-
++AH0-
+
+sup +AHs-
+  top: -0.5em+ADs-
++AH0-
+
+/+ACo- Embedded content
+   +AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQ- +ACo-/
+
+/+ACoAKg-
+ +ACo- Remove the border on images inside links in IE 10.
+ +ACo-/
+
+img +AHs-
+  border-style: none+ADs-
++AH0-
+
+/+ACo- Forms
+   +AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQ- +ACo-/
+
+/+ACoAKg-
+ +ACo- 1. Change the font styles in all browsers.
+ +ACo- 2. Remove the margin in Firefox and Safari.
+ +ACo-/
+
+button,
+input,
+optgroup,
+select,
+textarea +AHs-
+  font-family: inherit+ADs- /+ACo- 1 +ACo-/
+  font-size: 100+ACUAOw- /+ACo- 1 +ACo-/
+  line-height: 1.15+ADs- /+ACo- 1 +ACo-/
+  margin: 0+ADs- /+ACo- 2 +ACo-/
++AH0-
+
+/+ACoAKg-
+ +ACo- Show the overflow in IE.
+ +ACo- 1. Show the overflow in Edge.
+ +ACo-/
+
+button,
+input +AHs- /+ACo- 1 +ACo-/
+  overflow: visible+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- Remove the inheritance of text transform in Edge, Firefox, and IE.
+ +ACo- 1. Remove the inheritance of text transform in Firefox.
+ +ACo-/
+
+button,
+select +AHs- /+ACo- 1 +ACo-/
+  text-transform: none+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- Correct the inability to style clickable types in iOS and Safari.
+ +ACo-/
+
+button,
++AFs-type+AD0AIg-button+ACIAXQ-,
++AFs-type+AD0AIg-reset+ACIAXQ-,
++AFs-type+AD0AIg-submit+ACIAXQ- +AHs-
+  -webkit-appearance: button+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- Remove the inner border and padding in Firefox.
+ +ACo-/
+
+button::-moz-focus-inner,
++AFs-type+AD0AIg-button+ACIAXQ-::-moz-focus-inner,
++AFs-type+AD0AIg-reset+ACIAXQ-::-moz-focus-inner,
++AFs-type+AD0AIg-submit+ACIAXQ-::-moz-focus-inner +AHs-
+  border-style: none+ADs-
+  padding: 0+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- Restore the focus styles unset by the previous rule.
+ +ACo-/
+
+button:-moz-focusring,
++AFs-type+AD0AIg-button+ACIAXQ-:-moz-focusring,
++AFs-type+AD0AIg-reset+ACIAXQ-:-moz-focusring,
++AFs-type+AD0AIg-submit+ACIAXQ-:-moz-focusring +AHs-
+  outline: 1px dotted ButtonText+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- Correct the padding in Firefox.
+ +ACo-/
+
+fieldset +AHs-
+  padding: 0.35em 0.75em 0.625em+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- 1. Correct the text wrapping in Edge and IE.
+ +ACo- 2. Correct the color inheritance from +AGA-fieldset+AGA- elements in IE.
+ +ACo- 3. Remove the padding so developers are not caught out when they zero out
+ +ACo-    +AGA-fieldset+AGA- elements in all browsers.
+ +ACo-/
+
+legend +AHs-
+  box-sizing: border-box+ADs- /+ACo- 1 +ACo-/
+  color: inherit+ADs- /+ACo- 2 +ACo-/
+  display: table+ADs- /+ACo- 1 +ACo-/
+  max-width: 100+ACUAOw- /+ACo- 1 +ACo-/
+  padding: 0+ADs- /+ACo- 3 +ACo-/
+  white-space: normal+ADs- /+ACo- 1 +ACo-/
++AH0-
+
+/+ACoAKg-
+ +ACo- Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ +ACo-/
+
+progress +AHs-
+  vertical-align: baseline+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- Remove the default vertical scrollbar in IE 10+-.
+ +ACo-/
+
+textarea +AHs-
+  overflow: auto+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- 1. Add the correct box sizing in IE 10.
+ +ACo- 2. Remove the padding in IE 10.
+ +ACo-/
+
++AFs-type+AD0AIg-checkbox+ACIAXQ-,
++AFs-type+AD0AIg-radio+ACIAXQ- +AHs-
+  box-sizing: border-box+ADs- /+ACo- 1 +ACo-/
+  padding: 0+ADs- /+ACo- 2 +ACo-/
++AH0-
+
+/+ACoAKg-
+ +ACo- Correct the cursor style of increment and decrement buttons in Chrome.
+ +ACo-/
+
++AFs-type+AD0AIg-number+ACIAXQ-::-webkit-inner-spin-button,
++AFs-type+AD0AIg-number+ACIAXQ-::-webkit-outer-spin-button +AHs-
+  height: auto+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- 1. Correct the odd appearance in Chrome and Safari.
+ +ACo- 2. Correct the outline style in Safari.
+ +ACo-/
+
++AFs-type+AD0AIg-search+ACIAXQ- +AHs-
+  -webkit-appearance: textfield+ADs- /+ACo- 1 +ACo-/
+  outline-offset: -2px+ADs- /+ACo- 2 +ACo-/
++AH0-
+
+/+ACoAKg-
+ +ACo- Remove the inner padding in Chrome and Safari on macOS.
+ +ACo-/
+
++AFs-type+AD0AIg-search+ACIAXQ-::-webkit-search-decoration +AHs-
+  -webkit-appearance: none+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- 1. Correct the inability to style clickable types in iOS and Safari.
+ +ACo- 2. Change font properties to +AGA-inherit+AGA- in Safari.
+ +ACo-/
+
+::-webkit-file-upload-button +AHs-
+  -webkit-appearance: button+ADs- /+ACo- 1 +ACo-/
+  font: inherit+ADs- /+ACo- 2 +ACo-/
++AH0-
+
+/+ACo- Interactive
+   +AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQ- +ACo-/
+
+/+ACo-
+ +ACo- Add the correct display in Edge, IE 10+-, and Firefox.
+ +ACo-/
+
+details +AHs-
+  display: block+ADs-
++AH0-
+
+/+ACo-
+ +ACo- Add the correct display in all browsers.
+ +ACo-/
+
+summary +AHs-
+  display: list-item+ADs-
++AH0-
+
+/+ACo- Misc
+   +AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQA9AD0APQ- +ACo-/
+
+/+ACoAKg-
+ +ACo- Add the correct display in IE 10+-.
+ +ACo-/
+
+template +AHs-
+  display: none+ADs-
++AH0-
+
+/+ACoAKg-
+ +ACo- Add the correct display in IE 10.
+ +ACo-/
+
++AFs-hidden+AF0- +AHs-
+  display: none+ADs-
++AH0-

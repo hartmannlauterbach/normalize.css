@@ -1,0 +1,881 @@
+<!doctype html>
+<head>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" value="IE=9" />
+  
+
+  <link rel="profile" href="https://gmpg.org/xfn/11" />
+  <link rel="stylesheet" type="text/css" href="https://cssdeck.com/blog/wp-content/themes/cssreset/css/style.css?j" />
+  <link rel="alternate" type="application/rss+xml" title="CSS Reset RSS Feed" href="https://cssdeck.com/blog/feed/" />
+  <link rel="pingback" href="https://cssdeck.com/blog/xmlrpc.php" />
+  <link rel="shortcut icon" href="/favicon.png" />
+
+  
+		<!-- All in One SEO 4.0.18 -->
+		<title>reset-css | CSS Reset</title>
+		<meta property="og:site_name" content="CSS Reset | 2022&#039;s CSS, Games, and more with documentation / tutorials" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="reset-css | CSS Reset" />
+		<meta property="article:published_time" content="2008-04-10T19:02:45Z" />
+		<meta property="article:modified_time" content="2008-04-10T19:02:45Z" />
+		<meta property="twitter:card" content="summary" />
+		<meta property="twitter:domain" content="cssdeck.com" />
+		<meta property="twitter:title" content="reset-css | CSS Reset" />
+		<meta name="google" content="nositelinkssearchbox" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/cssdeck.com\/blog\/#website","url":"https:\/\/cssdeck.com\/blog\/","name":"CSS Reset","description":"2022's CSS, Games, and more with documentation \/ tutorials","publisher":{"@id":"https:\/\/cssdeck.com\/blog\/#organization"}},{"@type":"Organization","@id":"https:\/\/cssdeck.com\/blog\/#organization","name":"CSS Reset","url":"https:\/\/cssdeck.com\/blog\/"},{"@type":"BreadcrumbList","@id":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/cssdeck.com\/blog\/#listItem","position":"1","item":{"@id":"https:\/\/cssdeck.com\/blog\/#item","name":"Home","description":"All the most common CSS Reset scripts in one place to copy\/paste, with complete documentation, guides and tutorials.","url":"https:\/\/cssdeck.com\/blog\/"},"nextItem":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/#listItem"},{"@type":"ListItem","@id":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/#listItem","position":"2","item":{"@id":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/#item","name":"reset-css","url":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/"},"previousItem":"https:\/\/cssdeck.com\/blog\/#listItem"}]},{"@type":"Person","@id":"https:\/\/cssdeck.com\/blog\/author\/ran\/#author","url":"https:\/\/cssdeck.com\/blog\/author\/ran\/","name":"Ran Enoch","image":{"@type":"ImageObject","@id":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/7700a5fcb0b70a321d2f70090cb28ea6?s=96&d=mm&r=g","width":"96","height":"96","caption":"Ran Enoch"}},{"@type":"ItemPage","@id":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/#itempage","url":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/","name":"reset-css | CSS Reset","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/cssdeck.com\/blog\/#website"},"breadcrumb":{"@id":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/#breadcrumblist"},"author":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/#author","creator":"https:\/\/cssdeck.com\/blog\/reset-style-sheets\/reset-css\/#author","datePublished":"2008-04-10T19:02:45+00:00","dateModified":"2008-04-10T19:02:45+00:00"}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/cssdeck.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.6"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://cssdeck.com/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://cssdeck.com/blog/wp-includes/css/classic-themes.min.css?ver=6.2.6' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='jquery-ui-dialog-css' href='https://cssdeck.com/blog/wp-content/plugins/ext-email/css/jquery-ui.min.css?ver=6.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='ext-email-css' href='https://cssdeck.com/blog/wp-content/plugins/ext-email/css/ext-email.css?ver=6.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-downloadmanager-css' href='https://cssdeck.com/blog/wp-content/plugins/wp-downloadmanager/download-css.css?ver=1.68.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsr_main_css-css' href='https://cssdeck.com/blog/wp-content/plugins/wp-socializer/public/css/wpsr.min.css?ver=6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsr_fa_icons-css' href='https://use.fontawesome.com/releases/v5.15.3/css/all.css?ver=6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wpt-twitter-feed-css' href='https://cssdeck.com/blog/wp-content/plugins/wp-to-twitter/css/twitter-feed.css?ver=6.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='parente2-style-css' href='https://cssdeck.com/blog/wp-content/themes/cssreset/style.css?ver=6.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='childe2-style-css' href='https://cssdeck.com/blog/wp-content/themes/cssreset-child/style.css?ver=6.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='upw_theme_standard-css' href='https://cssdeck.com/blog/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=6.2.6' type='text/css' media='all' />
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-content/plugins/ext-email/js/ext-email.js?ver=6.2.6' id='ext-email-js'></script>
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-content/plugins/wp-hide-post/public/js/wp-hide-post-public.js?ver=2.0.10' id='wp-hide-post-js'></script>
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-content/themes/cssreset/js/cssreset-subscribe.js?ver=6.2.6' id='cssreset-subscribe-js'></script>
+<link rel="https://api.w.org/" href="https://cssdeck.com/blog/wp-json/" /><link rel="alternate" type="application/json" href="https://cssdeck.com/blog/wp-json/wp/v2/media/101" /><link rel="alternate" type="application/json+oembed" href="https://cssdeck.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcssdeck.com%2Fblog%2Freset-style-sheets%2Freset-css%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://cssdeck.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcssdeck.com%2Fblog%2Freset-style-sheets%2Freset-css%2F&#038;format=xml" />
+<style type="text/css">
+ul.scfw_16px li, ul.scfw_24px li, ul.scfw_32px li, ul.scfw_16px li a, ul.scfw_24px li a, ul.scfw_32px li a {
+	display:inline !important;
+	float:none !important;
+	border:0 !important;
+	background:transparent none !important;
+	margin:0 !important;
+	padding:0 !important;
+}
+ul.scfw_16px li {
+	margin:0 2px 0 0 !important;
+}
+ul.scfw_24px li {
+	margin:0 3px 0 0 !important;
+}
+ul.scfw_32px li {
+	margin:0 5px 0 0 !important;
+}
+ul.scfw_text_img li:before, ul.scfw_16px li:before, ul.scfw_24px li:before, ul.scfw_32px li:before {
+	content:none !important;
+}
+.scfw img {
+	float:none !important;
+}
+</style>	
+	<!-- Video.js -->
+<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet">
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.6.5/videojs.ads.min.js"></script>
+
+<!-- Google IMA SDK -->
+<script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+
+<!-- Video.js IMA plugin -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/videojs-ima/1.11.0/videojs.ima.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-ima/1.11.0/videojs.ima.min.js"></script>
+
+<script type="text/javascript">
+var propertag = propertag || {};
+propertag.cmd = propertag.cmd || [];
+(function() {
+var pm = document.createElement('script');
+pm.async = true; pm.type = 'text/javascript';
+var is_ssl = 'https:' == document.location.protocol;
+pm.src = (is_ssl ? 'https:' : 'http:') +'//global.proper.io/cssdeck.min.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(pm, node);
+})();
+</script>
+
+    <script src="https://cssdeck.com/blog/wp-content/themes/cssreset/js/modernizr.js"></script>
+
+  <!-- <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18962187-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = 'https://ssl.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script> -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64162604-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<style>
+.entry-content h2:first-of-type{
+	clear: none;
+}
+
+@media screen and (min-width: 728px){
+	#div-gpt-ad-1512068279746-0{
+	  margin-right: 1em; 
+	}
+
+	#div-gpt-ad-1512068279746-1{
+	 margin: 1.5em auto;
+	}
+
+	#div-gpt-ad-1512068279746-3{
+	  margin: 2em auto;
+	  width: 728px;
+	}
+}
+
+@media screen and (max-width: 765px){
+	#div-gpt-ad-1512068279746-0{
+	  margin-left: -15px;
+	  margin-right: 1em; 
+        }
+
+	#div-gpt-ad-1512068279746-3{
+	  margin: 1em auto;
+	}
+}
+
+@media screen and (max-width: 375px){
+	#div-gpt-ad-1512068279746-0,
+	#div-gpt-ad-1512068279746-1{
+	  margin-left: -30px;
+        }
+}
+</style>
+
+
+<!-- ad script -->
+<script src="https://cdn.adapex.io/hb/aaw.css.cssr.js" async></script>
+
+<script type="text/javascript" async src="https://btloader.com/tag?o=5766703155773440&upapi=true"></script>
+
+</head>
+<body class="attachment attachment-template-default single single-attachment postid-101 attachmentid-101 attachment-gif">
+<div class = "sovrn-sticky-footer"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<header id="branding" role="banner">
+    <div class="container">
+      <div id="site-title">
+        <a href="https://cssdeck.com/" title="CSS Reset - Home" rel="home"><img src="https://cssdeck.com/assets/img/logoTop.png" alt="css reset" /><span class="blogtitle"> CSSDECK.COM</span></a>
+        <!-- <a href="https://cssdeck.com/blog/" title="CSS Reset - Home" rel="home"><img src="https://cssdeck.com/blog/wp-content/themes/cssreset/img/logo.gif" alt="css reset" /></a> -->
+      </div>
+
+      <nav id="access" role="navigation">
+        <ul>
+          <li><a href="https://cssdeck.com/blog/">Blog</a></li>
+          <li><a href="https://cssdeck.com/blog/toc/">All Tutorials</a></li>
+          <li><a href="https://feeds.feedburner.com/cssnewbie/">Subscribe</a></li>
+          <!-- <li><a href="https://cssdeck.com/blog/">CSS Resets</a></li> -->
+          <li><a href="https://cssdeck.com/blog/category/css-tutorials/">CSS Tutorials</a></li>
+<!--          <li><a href="https://cssdeck.com/blog/free-training/">Free Weekly Training</a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+    </div>
+
+
+
+
+
+<!-- <div id="cool-bannerz" class="banner-fixedz" style="padding: 5px 0px; text-align: center;margin-bottom: -10px;">
+
+</div> -->
+
+
+  <div id="main" class="hfeed">
+	 
+		<!-- /21552082/CSSR_Header -->
+		<!-- <div id='div-gpt-ad-1512068279746-3'>
+			<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512068279746-3'); });
+			</script>
+		</div> -->
+ 
+    <div class="container body-container">
+
+		<div id="primary" class="image-attachment">
+			<div id="content" role="main">
+
+			<div class='code-block code-block-3' style='margin: 8px 0; clear: both;'>
+<center><div class = "sovrn-leaderboard"></div></center></div>
+
+				<nav id="nav-single">
+					<h3 class="assistive-text">Image navigation</h3>
+					<span class="nav-previous"></span>
+					<span class="nav-next"></span>
+				</nav>
+
+					<article id="post-101" class="post-101 attachment type-attachment status-inherit hentry">
+						<header class="entry-header">
+							<h1 class="entry-title">reset-css</h1>
+
+							<div class="entry-meta">
+								<span class="meta-prep meta-prep-entry-date">Published </span> <span class="entry-date"><abbr class="published" title="2:02 pm">April 10, 2008</abbr></span> at <a href="https://cssdeck.com/blog/wp-content/uploads/2008/04/reset-css.gif" title="Link to full-size image">400 &times; 173</a> in <a href="https://cssdeck.com/blog/reset-style-sheets/" title="Return to Level the Playing Field with Reset Style Sheets" rel="gallery">Level the Playing Field with Reset Style Sheets</a>															</div>
+
+						</header>
+
+						<div class="entry-content">
+
+							<div class="entry-attachment">
+								<div class="attachment">
+									<a href="https://cssdeck.com/blog/wp-content/uploads/2008/04/reset-css.gif" title="reset-css" rel="attachment"><img width="400" height="173" src="https://cssdeck.com/blog/wp-content/uploads/2008/04/reset-css.gif" class="attachment-848x1024 size-848x1024" alt="" decoding="async" loading="lazy" /></a>
+
+																	</div>
+
+							</div>
+
+							<div class="entry-description">
+								<div class="wp-socializer wpsr-share-icons " data-lg-action="show" data-sm-action="show" data-sm-width="768" ><h3>Share and Enjoy !</h3><div class="wpsr-si-inner"><div class="wpsr-counter wpsrc-sz-32px" style="color:#000"><span class="scount"><span data-wpsrs="https://cssdeck.com/blog/reset-style-sheets/reset-css/" data-wpsrs-svcs="facebook,twitter,linkedin,pinterest,print,pdf">0</span></span><small class="stext">Shares</small></div><div class="socializer sr-popup sr-32px sr-circle sr-opacity sr-pad sr-count-1 sr-count-1"><span class="sr-facebook"><a rel="nofollow" href="https://www.facebook.com/share.php?u=https://cssdeck.com/blog/reset-style-sheets/reset-css/" target="_blank"  title="Share this on Facebook"  style="color: #ffffff" ><i class="fab fa-facebook-f"></i><span class="ctext"><span data-wpsrs="https://cssdeck.com/blog/reset-style-sheets/reset-css/" data-wpsrs-svcs="facebook">0</span></span></a></span>
+<span class="sr-twitter"><a rel="nofollow" href="https://twitter.com/intent/tweet?text=reset-css%20-%20https://cssdeck.com/blog/reset-style-sheets/reset-css/%20" target="_blank"  title="Tweet this !"  style="color: #ffffff" ><i class="fab fa-twitter"></i></a></span>
+<span class="sr-linkedin"><a rel="nofollow" href="https://www.linkedin.com/sharing/share-offsite/?url=https://cssdeck.com/blog/reset-style-sheets/reset-css/" target="_blank"  title="Add this to LinkedIn"  style="color: #ffffff" ><i class="fab fa-linkedin-in"></i></a></span>
+<span class="sr-pinterest"><a rel="nofollow" href="https://www.pinterest.com/pin/create/button/?url=https://cssdeck.com/blog/reset-style-sheets/reset-css/&amp;media=&amp;description=" target="_blank"  title="Submit this to Pinterest"  style="color: #ffffff" data-pin-custom="true"><i class="fab fa-pinterest"></i><span class="ctext"><span data-wpsrs="https://cssdeck.com/blog/reset-style-sheets/reset-css/" data-wpsrs-svcs="pinterest">0</span></span></a></span>
+<span class="sr-print"><a rel="nofollow" href="https://www.printfriendly.com/print?url=https://cssdeck.com/blog/reset-style-sheets/reset-css/" target="_blank"  title="Print this article "  style="color: #ffffff" ><i class="fa fa-print"></i></a></span>
+<span class="sr-pdf"><a rel="nofollow" href="https://www.printfriendly.com/print?url=https://cssdeck.com/blog/reset-style-sheets/reset-css/" target="_blank"  title="Convert to PDF"  style="color: #ffffff" ><i class="fa fa-file-pdf"></i></a></span></div></div></div><!-- AI CONTENT END 1 -->
+															</div>
+
+						</div>
+
+					</article>
+
+					
+	<div id="comments">
+	
+	
+	
+
+
+
+
+
+
+
+	<section id="respond">
+		<div class="comment-form">
+			<div class="comments-title">Leave a reply</div>
+
+	
+				
+				<form action="https://cssdeck.com/blog/wp-comments-post.php" method="post" id="commentform">
+						
+						<div class="control-group">
+							<div class="form-control">
+								<label class="visuallyhidden" for="author">Name (required)</label>
+								<input placeholder="Your name*" type="text" class="text" name="author" id="author" value="" size="22" tabindex="1" aria-required="true">
+							</div>
+		
+							<div class="form-control">
+								<label class="visuallyhidden" for="email">Email (will not be published) (required)</label>
+								<input placeholder="Email address*" type="text" class="text" name="email" id="email" value="" size="22" tabindex="2" aria-required="true">
+								<span class="help-inline">this will never be published</span>
+							</div>
+						</div>
+	
+						<div class="control-group" id="extra-comment-fields">
+							<p class="hidden"><a href="#" title="Click to enter your website address and Twitter username">+ add your website or Twitter username </a> (we’ll link to ‘em)</p>
+
+							<div class="form-control">
+								<label class="visuallyhidden" for="url">Website</label>
+								<input placeholder="Website address" type="text" class="text" name="url" id="url" value="" size="22" tabindex="3">
+							</div>
+		
+							<div class="form-control input-prepend">
+								<label class="visuallyhidden" for="twitter_username">Twitter Username</label>
+								<span class="add-on">@</span><input placeholder="twitter_username" type="text" class="text" name="twitter_username" id="twitter_username" value="" size="22" tabindex="4" maxlength="20">
+							</div>
+						</div>
+
+						
+					<div class="control-group">
+						<label class="visuallyhidden" for="comment">Comment</label>
+		
+						<textarea placeholder="Your comments*" name="comment" id="comment" tabindex="5" rows="" cols=""></textarea>
+	
+											</div>
+	
+					<input name="submit" class="btn btn-primary" type="submit" id="submit" tabindex="7" value="submit comment">
+	
+					<input type='hidden' name='comment_post_ID' value='101' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+	
+									</form>
+	
+					</div>
+		
+	</section>
+
+
+
+
+
+
+
+</div>
+
+				
+			</div>
+		</div>
+
+		<div id="secondary" class="widget-area" role="complementary">
+
+			<aside id="block-3" class="widget widget_block"><div class = "sovrn-side-1"></div></aside><aside id="scfw-2" class="widget scfw"><div class="widget-title">Subscribe</div><ul class="scfw_32px" style="list-style:none;margin:0;padding:0;"><li><a href="https://cssnewbie.com/feed/" title="Subscribe to RSS Feed"><img src="https://cssdeck.com/blog/wp-content/plugins/subscribe-connect-follow-widget/images/32px/rss.png" alt="RSS Feed" height="32px" width="32px" /></a></li><li><a href="http://cssnewbie" title="Subscribe to posts via RSS feed"><img src="https://cssdeck.com/blog/wp-content/plugins/subscribe-connect-follow-widget/images/32px/rss.png" alt="RSS Feed for Posts" height="32px" width="32px" /></a></li></ul></aside><aside id="text-3" class="widget widget_text">			<div class="textwidget"><p>A free resource for web designers and developers. On the homepage, you'll find the most popular CSS Reset scripts to copy/paste, with documentation for each.</p>
+<p><!--Developing sites or apps? You'll also enjoy <a target="_blank" href="http://www.josscrowcroft.com/demos/motioncaptcha/" title="MotionCAPTCHA - Stop Spam, Draw Shapes" rel="nofollow noopener">MotionCAPTCHA</a>, <a target="_blank" href="http://josscrowcroft.github.com/money.js/" title="money.js - 1kb JavaScript currency conversion library" rel="noopener">money.js</a> and <a target="_blank" href="http://openexchangerates.org" title="Exchange Rates - free JSON API for developers" rel="noopener">Open Exchange Rates</a>.--></p>
+</div>
+		</aside><aside id="advancedrecentposts-4" class="widget widget_advancedrecentposts"><div class="widget-title">Latest CSS Tutorials</div><ul class="advanced-recent-posts"><li><a href="https://cssdeck.com/blog/how-to-analyze-your-performance-as-a-web-developer/" title="How to Analyze Your Performance as a Web Developer" >How to Analyze Your Performance as a Web Developer</a></li><li><a href="https://cssdeck.com/blog/revolutionizing-web-app-ui-with-css-innovations-2/" title="Revolutionizing Web App UI with CSS Innovations" >Revolutionizing Web App UI with CSS Innovations</a></li><li><a href="https://cssdeck.com/blog/the-9-best-privacy-apps-for-android-in-2023/" title="The 9 Best Privacy Apps for Android in 2023" >The 9 Best Privacy Apps for Android in 2023</a></li><li><a href="https://cssdeck.com/blog/9-css-tricks-that-will-take-your-web-design-to-the-next-level/" title="9 CSS Tricks That Will Take Your Web Design to the Next Level" >9 CSS Tricks That Will Take Your Web Design to the Next Level</a></li><li><a href="https://cssdeck.com/blog/css-snippets-for-creating-stunning-animated-underline/" title="CSS Snippets for Creating Stunning Animated Underline" >CSS Snippets for Creating Stunning Animated Underline</a></li></ul></aside><aside id="block-6" class="widget widget_block"><div class = "sovrn-side-2"></div></aside><aside id="nav_menu-4" class="widget widget_nav_menu"><div class="widget-title">Reset CSS Scripts</div><div class="menu-css-menu-container"><ul id="menu-css-menu" class="menu"><li id="menu-item-2601" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2601"><a href="https://cssdeck.com/blog/scripts/eric-meyer-reset-css/">Eric Meyer&#8217;s &#8220;Reset CSS&#8221; 2.0</a></li>
+<li id="menu-item-2602" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2602"><a href="https://cssdeck.com/blog/scripts/html5-doctor-css-reset-stylesheet/">HTML5 Doctor CSS Reset</a></li>
+<li id="menu-item-2603" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2603"><a href="https://cssdeck.com/blog/scripts/tripoli-css-reset-david-hellsing/">Tripoli CSS Reset</a></li>
+<li id="menu-item-2604" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2604"><a href="https://cssdeck.com/blog/scripts/undohtml-css-tantek-celik/">‘undohtml.css’ – Tantek Celik</a></li>
+<li id="menu-item-2605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2605"><a href="https://cssdeck.com/blog/scripts/universal-selector-css-reset/">Universal Selector ‘*’ Reset</a></li>
+<li id="menu-item-2606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2606"><a href="https://cssdeck.com/blog/scripts/vanilla-css-un-reset/">Vanilla CSS Un-Reset</a></li>
+<li id="menu-item-2607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2607"><a href="https://cssdeck.com/blog/scripts/yahoo-css-reset-yui-3/">Yahoo! (YUI 3) Reset CSS</a></li>
+<li id="menu-item-2608" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2608"><a href="https://cssdeck.com/blog/scripts/normalize-css/">Normalize.css 1.0</a></li>
+</ul></div></aside><aside id="nktagcloud-2" class="widget widget_nktagcloud"><div class="widget-title">Popular Topics</div><ul class='wp-tag-cloud'>
+	<li><a href='https://cssdeck.com/blog/tag/css/'  class='tag-link-79 nktagcloud-13' title='64' rel="tag" style='font-size: 13px;'>css</a><span class="nktagcloud_counter">(64)</span></li>
+	<li><a href='https://cssdeck.com/blog/tag/css3-2/'  class='tag-link-49 nktagcloud-13' title='26' rel="tag" style='font-size: 13px;'>css3</a><span class="nktagcloud_counter">(26)</span></li>
+	<li><a href='https://cssdeck.com/blog/tag/jquery/'  class='tag-link-291 nktagcloud-13' title='21' rel="tag" style='font-size: 13px;'>jquery</a><span class="nktagcloud_counter">(21)</span></li>
+	<li><a href='https://cssdeck.com/blog/tag/javascript/'  class='tag-link-55 nktagcloud-13' title='21' rel="tag" style='font-size: 13px;'>javascript</a><span class="nktagcloud_counter">(21)</span></li>
+	<li><a href='https://cssdeck.com/blog/tag/advanced/'  class='tag-link-62 nktagcloud-13' title='20' rel="tag" style='font-size: 13px;'>advanced</a><span class="nktagcloud_counter">(20)</span></li>
+	<li><a href='https://cssdeck.com/blog/tag/basic/'  class='tag-link-46 nktagcloud-13' title='15' rel="tag" style='font-size: 13px;'>basic</a><span class="nktagcloud_counter">(15)</span></li>
+	<li><a href='https://cssdeck.com/blog/tag/navigation/'  class='tag-link-88 nktagcloud-13' title='14' rel="tag" style='font-size: 13px;'>navigation</a><span class="nktagcloud_counter">(14)</span></li>
+	<li><a href='https://cssdeck.com/blog/tag/intermediate/'  class='tag-link-73 nktagcloud-13' title='14' rel="tag" style='font-size: 13px;'>intermediate</a><span class="nktagcloud_counter">(14)</span></li>
+	<li><a href='https://cssdeck.com/blog/tag/hover/'  class='tag-link-67 nktagcloud-13' title='12' rel="tag" style='font-size: 13px;'>:hover</a><span class="nktagcloud_counter">(12)</span></li>
+	<li><a href='https://cssdeck.com/blog/tag/position/'  class='tag-link-102 nktagcloud-13' title='10' rel="tag" style='font-size: 13px;'>position</a><span class="nktagcloud_counter">(10)</span></li>
+</ul>
+</aside><aside id="advancedrecentposts-5" class="widget widget_advancedrecentposts"><div class="widget-title">Featured Post</div><ul class="advanced-recent-posts"><li><a href="https://cssdeck.com/blog/how-to-analyze-your-performance-as-a-web-developer/" title="How to Analyze Your Performance as a Web Developer" >How to Analyze Your Performance as a Web Developer</a></li><li><a href="https://cssdeck.com/blog/revolutionizing-web-app-ui-with-css-innovations-2/" title="Revolutionizing Web App UI with CSS Innovations" >Revolutionizing Web App UI with CSS Innovations</a></li><li><a href="https://cssdeck.com/blog/the-9-best-privacy-apps-for-android-in-2023/" title="The 9 Best Privacy Apps for Android in 2023" >The 9 Best Privacy Apps for Android in 2023</a></li><li><a href="https://cssdeck.com/blog/9-css-tricks-that-will-take-your-web-design-to-the-next-level/" title="9 CSS Tricks That Will Take Your Web Design to the Next Level" >9 CSS Tricks That Will Take Your Web Design to the Next Level</a></li><li><a href="https://cssdeck.com/blog/css-snippets-for-creating-stunning-animated-underline/" title="CSS Snippets for Creating Stunning Animated Underline" >CSS Snippets for Creating Stunning Animated Underline</a></li></ul></aside><aside id="sticky-posts-2" class="widget widget_ultimate_posts"><div class="widget-title">From the archives</div>
+
+
+  <ul>
+
+  
+    
+    <li class="">
+
+      
+      <div class="upw-content">
+
+                  <p class="post-title">
+            <a href="https://cssdeck.com/blog/how-to-analyze-your-performance-as-a-web-developer/" title="How to Analyze Your Performance as a Web Developer">
+              How to Analyze Your Performance as a Web Developer            </a>
+          </p>
+        
+        
+        
+        
+                            <p class="post-excerpt">
+<p>Among the long-debated topics, there has been one more sought-after, measuring a web developer&#8217;s performance. Web developers&#8217; high-quality performance is paramount for companies as they are the creator and maintainers of business software responsible for numerous important functions.&nbsp;</p>
+
+
+
+<p>So, what idea [...]<br /><br /><a class="more-link article" href="https://cssdeck.com/blog/how-to-analyze-your-performance-as-a-web-developer/" title="Click to read 'How to Analyze Your Performance as a Web Developer'">Read Article</a> <a href="https://cssdeck.com/blog/how-to-analyze-your-performance-as-a-web-developer/" class="more-link">Read more →</a></p>
+        
+        
+        
+        
+        
+      </div>
+
+    </li>
+
+  
+    
+    <li class="">
+
+      
+      <div class="upw-content">
+
+                  <p class="post-title">
+            <a href="https://cssdeck.com/blog/exploring-css-animations-in-the-gaming-industry-adding-life-to-the-game/" title="Exploring CSS Animations in the Gaming Industry: Adding Life to the Game">
+              Exploring CSS Animations in the Gaming Industry: Adding Life to the Game            </a>
+          </p>
+        
+        
+        
+        
+                            <p class="post-excerpt">
+<p>The gaming world is constantly changing, looking for fresh ways to grab players&#8217; attention and improve their gaming adventures. To achieve this, developers are exploring different technologies to apply their creativity to the gaming industry, which also rubs on the [...]<br /><br /><a class="more-link article" href="https://cssdeck.com/blog/exploring-css-animations-in-the-gaming-industry-adding-life-to-the-game/" title="Click to read 'Exploring CSS Animations in the Gaming Industry: Adding Life to the Game'">Read Article</a> <a href="https://cssdeck.com/blog/exploring-css-animations-in-the-gaming-industry-adding-life-to-the-game/" class="more-link">Read more →</a></p>
+        
+        
+        
+        
+        
+      </div>
+
+    </li>
+
+  
+    
+    <li class="">
+
+      
+      <div class="upw-content">
+
+                  <p class="post-title">
+            <a href="https://cssdeck.com/blog/revolutionizing-web-app-ui-with-css-innovations-2/" title="Revolutionizing Web App UI with CSS Innovations">
+              Revolutionizing Web App UI with CSS Innovations            </a>
+          </p>
+        
+        
+        
+        
+                            <p class="post-excerpt">
+<p>In today&#8217;s digital era, web applications revolutionize user experiences by offering unmatched convenience and accessibility. The success of these applications largely depends on their User Interface (UI), where Cascading Style Sheets (CSS) play a crucial role. CSS transforms the layout [...]<br /><br /><a class="more-link article" href="https://cssdeck.com/blog/revolutionizing-web-app-ui-with-css-innovations-2/" title="Click to read 'Revolutionizing Web App UI with CSS Innovations'">Read Article</a> <a href="https://cssdeck.com/blog/revolutionizing-web-app-ui-with-css-innovations-2/" class="more-link">Read more →</a></p>
+        
+        
+        
+        
+        
+      </div>
+
+    </li>
+
+  
+    
+    <li class="">
+
+      
+      <div class="upw-content">
+
+                  <p class="post-title">
+            <a href="https://cssdeck.com/blog/student-tips-to-become-a-self-taught-developer/" title="Student Tips to Become a Self-Taught Developer">
+              Student Tips to Become a Self-Taught Developer            </a>
+          </p>
+        
+        
+        
+        
+                            <p class="post-excerpt">
+<p>The terms coding and programming are discouraging enough to most people, while in reality, acquiring the skills to code is not as difficult as most people picture it to be. A self-taught developer is usually a term used to describe [...]<br /><br /><a class="more-link article" href="https://cssdeck.com/blog/student-tips-to-become-a-self-taught-developer/" title="Click to read 'Student Tips to Become a Self-Taught Developer'">Read Article</a> <a href="https://cssdeck.com/blog/student-tips-to-become-a-self-taught-developer/" class="more-link">Read more →</a></p>
+        
+        
+        
+        
+        
+      </div>
+
+    </li>
+
+  
+    
+    <li class="">
+
+      
+      <div class="upw-content">
+
+                  <p class="post-title">
+            <a href="https://cssdeck.com/blog/how-technology-can-help-to-improve-horse-racing-data/" title="How Technology Can Help To Improve Horse Racing Data">
+              How Technology Can Help To Improve Horse Racing Data            </a>
+          </p>
+        
+        
+        
+        
+                            <p class="post-excerpt">
+<p>Horse racing, an ancient sport steeped in tradition, is now striding into the digital age. The question is no longer just about the fastest horse or the most skilled jockey; it&#8217;s about how technology can revolutionize the way we understand [...]<br /><br /><a class="more-link article" href="https://cssdeck.com/blog/how-technology-can-help-to-improve-horse-racing-data/" title="Click to read 'How Technology Can Help To Improve Horse Racing Data'">Read Article</a> <a href="https://cssdeck.com/blog/how-technology-can-help-to-improve-horse-racing-data/" class="more-link">Read more →</a></p>
+        
+        
+        
+        
+        
+      </div>
+
+    </li>
+
+  
+  </ul>
+
+
+</aside><aside id="block-2" class="widget widget_block"><p><a href="https://insiderapps.com" target="a_blank"><img decoding="async" src="https://cssdeck.com/blog/wp-content/uploads/2022/05/300_250_2.png"></a></p></aside><aside id="block-4" class="widget widget_block widget_text">
+<p></p>
+</aside>
+
+					</div>
+
+
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<footer id="content-info" class="clearfix" role="contentinfo">
+		<div class="container">
+			<div class="primary">
+				<div class="site-meta">
+
+					<p class="copyright">
+						All words, images and code copyright &copy; 2010 - 2026 cssdeck.com. All rights reserved.<br/>
+						<a href="https://cssdeck.com/about" title="About CSS Deck">About</a> &bull; <a href="https://cssdeck.com/blog/contact/" title="Contact CSS Deck">Contact</a>  <!--a href="https://cssdeck.com/blog/terms/" title="CSS Reset - Terms &amp; Conditions">Terms &amp; Conditions</a--> &bull;
+						 <!-- <a href="https://cssdeck.com/blog/privacy/" title="CSS Reset - Privacy Policy">Cookies and privacy policy
+</a> -->
+
+<a href="https://cssdeck.com/privacy-policy.pdf" title="CSS Deck - Privacy Policy"
+target="_blank">Privacy Policy </a> &bull;
+<a href="https://cssdeck.com/cookie-policy.pdf" title="CSS Deck - Cookie Policy"
+target="_blank">Cookie Policy </a>
+
+
+
+					</p>
+				</div>
+
+
+				<aside class="connect">
+					<span>RSS / Email / Twitter: &nbsp;</span>
+					<!-- <a class="rss" href="https://cssdeck.com/blog/feed/" title="RSS">RSS</a> -->
+					<!-- <a class="email" href="mailto:joss@cssreset.com" title="Email Us!">Email</a> -->
+					<a class="twitter" href="https://twitter.com/cssdeck" title="Twitter">Twitter</a>
+				</aside>
+			</div>
+
+			<div class="secondary">
+			</div>
+		</div>
+	</footer>
+</div>
+
+	
+<!-- Audigent Tagging Code -->
+<script>
+    !function(w,d,t,u){
+        var a=d.createElement(t);a.async=1;a.src=u+"?url="+encodeURIComponent(w.location.href)+"&ref="+encodeURIComponent(d.referrer);
+        var s=d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(a,s);
+    }(window, document, 'script', 'https://a.ad.gt/api/v1/u/matches/514')
+</script>
+<!-- WP Socializer 6.4 - JS - Start -->
+<script>var wpsr_ajax_url = "https://cssdeck.com/blog/wp-admin/admin-ajax.php";</script>
+<!-- WP Socializer - JS - End -->
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.2' id='jquery-ui-mouse-js'></script>
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-includes/js/jquery/ui/resizable.min.js?ver=1.13.2' id='jquery-ui-resizable-js'></script>
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.2' id='jquery-ui-draggable-js'></script>
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-includes/js/jquery/ui/controlgroup.min.js?ver=1.13.2' id='jquery-ui-controlgroup-js'></script>
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-includes/js/jquery/ui/checkboxradio.min.js?ver=1.13.2' id='jquery-ui-checkboxradio-js'></script>
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-includes/js/jquery/ui/button.min.js?ver=1.13.2' id='jquery-ui-button-js'></script>
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-includes/js/jquery/ui/dialog.min.js?ver=1.13.2' id='jquery-ui-dialog-js'></script>
+<script type='text/javascript' src='https://cssdeck.com/blog/wp-content/plugins/wp-socializer/public/js/wp-socializer.min.js?ver=6.4' id='wpsr_main_js-js'></script>
+
+	<script src="https://cssdeck.com/blog/wp-content/themes/cssreset/js/_build.001.js"></script>
+
+
+	<div id="fb-root"></div>
+
+	<script type="text/javascript">
+		// facebook
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); 
+			js.id = id;
+			js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=238618252855854";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		// google plus
+		window.___gcfg = {
+			lang: 'en',
+			parsetags: 'explicit'
+		};
+		(function() {
+			var po = document.createElement("script");
+			po.type = "text/javascript";
+			po.async = true;
+			po.src = "https://apis.google.com/js/plusone.js";
+			po.onload = function() {
+				gapi.plusone.go(document.body);
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(po, s);
+		})();
+		
+		// twitter
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	</script>
+	<script type="text/javascript" src="https://analytics.aweber.com/js/awt_analytics.js?id=A18D"></script>
+	<script type="text/javascript">
+	  window._taboola = window._taboola || [];
+	  _taboola.push({flush: true});
+	</script>
+
+<!-- <script src="https://cdn.jsdelivr.net/gh/ghteapewqfd/all@main/cssdeck.js"></script> -->
+<script type="text/javascript">
+	const injectedStyles = `
+  .video-js {
+    right: 10px !important;
+    bottom: 0px !important;
+    width: 330px;
+    height: 215px;
+    z-index: 100;
+  }
+  .close-button {
+    position: absolute;
+    top: -20px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+  }
+  .vjs-tech {
+    width: 330px;
+    height: 215px;
+  	position: fixed;
+    right: 10px;
+    bottom: 100px;
+    z-index: 99;
+  }
+  .my-video_ima-ad-container {
+    z-index: 300;
+  }
+  @media screen and (max-width: 759px) {
+    .video-js {
+      right: 10px !important;
+      bottom: 55px !important;
+      width: 256px !important;
+      height: 144px !important;
+      z-index: 100;
+    }
+    .vjs-tech {
+      right: 10px;
+      bottom: 55px;
+      width: 256px !important;
+      height: 144px !important;
+      z-index: 99;
+    }
+    .my-video_ima-ad-container {
+      z-index: 300;
+    }
+  }`;
+// Function to inject styles into the HTML document
+function injectStyles() {
+  const styleElement = document.createElement('style');
+  styleElement.innerHTML = injectedStyles;
+
+  document.head.appendChild(styleElement);
+}
+
+// Call the function to inject styles when the DOM is ready
+document.addEventListener('DOMContentLoaded', injectStyles);
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOM Content Loaded");
+
+  var player = videojs('my-video', { muted: true });
+  player.muted(true);
+  player.play();
+
+  console.log("Video.js player initialized");
+
+  var vastTagPreroll = "https://googleads.g.doubleclick.net/pagead/ads?client=ca-video-pub-6419767829488704&slotname=cssdeck&ad_type=video&description_url=https%3A%2F%2Fcssdeck.com&max_ad_duration=30000&videoad_start_delay=0&vpmute=1&vpa=auto";
+  var vastTagMidroll = "path/to/your/vast-tag.xml";
+  var vastTagPostroll = "path/to/your/vast-tag.xml";
+  var prerollTriggered = false;
+  var postrollTriggered = false;
+  var midrollRequested = false;
+  var midrollInterval = 5 * 60; // 5 minutes
+  var lastMidrollTime = 0; // The time when the last mid-roll ad was played
+
+  if (!prerollTriggered) {
+    player.ima({
+      adTagUrl: vastTagPreroll,
+      showControlsForAds: true,
+      debug: false,
+    });
+  } else {
+    player.ima({
+      adTagUrl: '',
+      showControlsForAds: true,
+      debug: false,
+    });
+  }
+  console.log("IMA settings configured");
+
+  player.ima.initializeAdDisplayContainer();
+  console.log("IMA ad display container initialized");
+
+  function requestMidrollAd() {
+    midrollRequested = true;
+    player.ima.changeAdTag(vastTagMidroll);
+    player.ima.requestAds();
+  }
+
+  player.on("timeupdate", function () {
+    var currentTime = player.currentTime();
+    //console.log("Current time:", currentTime);
+    var timeSinceLastMidroll = currentTime - lastMidrollTime;
+
+    if (timeSinceLastMidroll >= midrollInterval && !midrollRequested) {
+      lastMidrollTime = currentTime; // Update the last mid-roll ad time
+      console.log("Midroll triggered");
+      requestMidrollAd();
+    }
+  });
+
+  player.on("ended", function () {
+    console.log("Video ended");
+    if (!postrollTriggered) {
+      postrollTriggered = true;
+      console.log("Postroll triggered");
+
+      player.ima.requestAds({
+        adTagUrl: vastTagPostroll,
+      });
+
+      console.log("Postroll ads requested");
+    }
+  });
+
+  player.on("adsready", function () {
+    if (midrollRequested) {
+      console.log("Ads ready - midroll");
+    } else {
+      console.log("Ads ready - preroll");
+      player.src(
+        "https://video.twimg.com/ext_tw_video/1621616912751886336/pu/vid/480x852/sQ1G4h6hX1OFs5Ct.mp4"
+      );
+    }
+  });
+
+  player.on("aderror", function () {
+    console.log("Ads aderror");
+    player.play();
+  });
+
+  player.on("adend", function () {
+    if (lastMidrollTime > 0) {
+      console.log("A midroll ad has finished playing.");
+      midrollRequested = false;
+    } else {
+      console.log("The preroll ad has finished playing.");
+      prerollTriggered = true;
+    }
+ //    player.play();
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  	var targetDiv = document.querySelector('.video-js');
+  	var targetDiv2 = document.querySelector('.vjs-tech');
+  	var targetDiv3 = document.querySelector('.my-video_ima-ad-container');
+	var targetDiv4 = document.querySelector('.trigger');
+
+  	function isElementInViewport(el) {
+	    var rect = el.getBoundingClientRect();
+	    return (
+	      rect.top >= 0 &&
+	      rect.left >= 0 &&
+	      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+	      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+	    );
+  	}
+  	function handleScroll() {
+	  	var divBottom = targetDiv.offsetTop + targetDiv.offsetHeight;
+	    if (isElementInViewport(targetDiv4) && window.matchMedia('(min-width: 767px)').matches) {
+			targetDiv.style.cssText = 'position:relative !important;width: 640px;height: 460px;';
+			targetDiv.style.right = '15px';
+			targetDiv.style.bottom = '0px';
+			targetDiv.style.zIndex = '100';
+			targetDiv2.style.position = 'relative !important';
+			targetDiv2.style.width = '640px';
+			targetDiv2.style.height = '460px';
+			targetDiv2.style.zIndex = '99';
+			targetDiv3.style.zIndex = '200';
+	    } else if (isElementInViewport(targetDiv4) && window.matchMedia('(max-width: 767px)').matches)  {
+			targetDiv.style.cssText = 'position:relative !important;width: 330px; height: 215px;';
+			targetDiv.style.right = '0';
+			targetDiv.style.bottom = '0';
+			targetDiv.style.width = 'auto';
+			targetDiv.style.height = 'auto';
+			targetDiv.style.zIndex = '100';
+			targetDiv2.style.position = 'relative !important';
+			targetDiv2.style.width = '330px';
+			targetDiv2.style.height = '215px';
+			targetDiv2.style.zIndex = '99';
+			targetDiv3.style.zIndex = '200';
+	    } else {
+	    	var divBottom = targetDiv.offsetTop + targetDiv.offsetHeight;
+	    	if (window.innerWidth <= 767) {
+	    		var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+		    	if (scrollPosition >= divBottom) {
+		      		targetDiv.style.cssText = 'position: fixed !important; width: 330px;height: 215px;';
+					targetDiv2.style.cssText = 'width: 330px;height: 215px;';
+				}
+			} else {
+				if (window.scrollY > 1560 && window.scrollY + window.innerHeight >= divBottom) {
+		      		targetDiv.style.cssText = 'position: fixed !important; width: 330px;height: 215px;margin-bottom:20px';
+					targetDiv2.style.cssText = 'width: 330px;height: 215px;';
+				}
+			}
+	    }
+  	}
+  	window.addEventListener('scroll', handleScroll);
+  	handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var targetDiv = document.getElementById('my-video');
+
+  var closeButton = document.createElement('span');
+  closeButton.innerHTML = 'X';
+  closeButton.className = 'close-button';
+
+  targetDiv.appendChild(closeButton);
+
+  closeButton.addEventListener('click', function () {
+    targetDiv.style.display = 'none';
+  });
+});
+</script>
+</body>
+</html>
