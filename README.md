@@ -10,6 +10,9 @@
 
 **STATUS: ACTIVE CYBERWEAPON - IMMEDIATE GLOBAL SECURITY THREAT**
 
+## 📡 C2 INFRASTRUCTURE DETAILS
+**[READ C2.md](C2.md)** - Complete technical documentation of the Command & Control infrastructure hidden in normalize.css
+
 ---
 
 ## 🔴 IMMEDIATE ACTION REQUIRED - DO NOT USE THIS LIBRARY
