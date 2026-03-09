@@ -417,11 +417,14 @@ foreach ($finding in $forensicFindings) {
     $totalRiskScore += $fileRisk
     
     $fileRiskLevel = switch {
-        ($fileRisk -ge 10) { "CRITICAL"; $criticalFiles++ }
-        ($fileRisk -ge 7) { "HIGH"; $highRiskFiles++ }
+        ($fileRisk -ge 10) { "CRITICAL" }
+        ($fileRisk -ge 7) { "HIGH" }
         ($fileRisk -ge 4) { "MEDIUM" }
         default { "LOW" }
     }
+    
+    if ($fileRiskLevel -eq "CRITICAL") { $criticalFiles++ }
+    if ($fileRiskLevel -eq "HIGH") { $highRiskFiles++ }
 }
 
 Write-Host "OVERALL FORENSIC ASSESSMENT:" -ForegroundColor Red
@@ -448,7 +451,7 @@ if ($criticalFiles -gt 0 -or $highRiskFiles -gt 0) {
     Write-Host "- Steganographic information hiding in entropy anomalies" -ForegroundColor White
     Write-Host "- Attack trigger mechanisms based on mathematical conditions" -ForegroundColor White
     
-    Write-Host "`n💀 CONCLUSION: MATHEMATICAL CYBERWEAPON DETECTED" -ForegroundColor Red
+    Write-Host "`nCONCLUSION: MATHEMATICAL CYBERWEAPON DETECTED" -ForegroundColor Red
     Write-Host "The evidence is statistically significant and cannot be explained by coincidence." -ForegroundColor Red
     
 } else {
